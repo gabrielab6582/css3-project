@@ -56,25 +56,37 @@ text-shadow: 1px 3px;
     
     position:absolute;
     /*border:solid black;*/
-   /*bottom:500px;*/
-   /*left:600px;*/
    top: 200px;
-  left: 550px;
+  left: 950px;
   width: 509;
   height: 472px;
-transition: 
+  animation-name: dancee;
+ animation-duration: 4s;
+   animation-iteration-count: infinite;
 }
     @keyframes dance {
  0%{
-  transform: rotate(60deg)
+  transform: rotate(60deg);
  }
 
 50%{
    transform: rotate(-60deg);
-   
-    
+  transform: translate(200px, 100px);
+
+ 
+
 }
 100%{
     transform: rotate(60deg);
+  
 }
 }
+
+@keyframes dancee {
+     0%{
+         transform: rotateX ;
+     }
+     100%{
+         transform:  rotateX(-360deg);
+     }
+ }
