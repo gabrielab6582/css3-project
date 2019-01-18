@@ -1,20 +1,20 @@
 
 body{
-    background-image: linear-gradient(to right bottom, blanchedalmond , goldenrod)
+    background-image: linear-gradient(to right bottom, blanchedalmond , goldenrod)  /* create a fade in color from a light yellow code to a golden color*/
     
 }
 header{
 
-text-align: center;
+text-align: center; 
 /*border: 10px double orange;*/
-border-radius: 20px;
-padding:15px; 
-margin: 10px; 
+border-radius: 20px; /* the edges of the border are rounded*/
+padding:15px; /* generate space around text, inside of the borders*/
+margin: 10px;  /*creates space outside of the specified boreders for the header*/
 font-size:60px;
 font-family: Homemade Apple;
 background: url(background.jpg);
 background-size: cover;
-  /*background-size: 100px 80px;*/
+  
 text-shadow: 1px 3px;
 }
 
@@ -25,27 +25,24 @@ font-size:20px;
 
 }
 h1{
-    float:top;
+    
 text-align: center;
 /*border: 10px double orange;*/
-border-radius: 20px;
-padding:15px;
-margin: 10px;
+border-radius: 20px; /* the edges of the border are rounded*/
+padding:15px; /* generate space around text, inside of the borders*/
+margin: 10px; /*creates space outside of the specified boreders for the header*/
 font-size:60px;
 font-family: Homemade Apple;
 background: url(background.jpg);
 background-size: cover;
-  /*background-size: 100px 80px;*/
+  
 text-shadow: 1px 3px;
 }
 
 #snoopy{
-    position:relative;
-    /*border:solid black;*/
-   /*top:10px;*/
-   /*left:50px;*/
-   margin:20px;
-   animation-name: dance;
+    position:relative;  /* positioned relative to its normal position and can change with different properties.*/
+   margin:20px; /*creates space outside of the specified borders of the image*/
+   animation-name: dance; /* used to define the animation that will be used later*/
   animation-duration: 2s;
    animation-iteration-count: infinite;
     
@@ -54,24 +51,24 @@ text-shadow: 1px 3px;
 
 #snoopy1{
     
-    position:absolute;
-    /*border:solid black;*/
-   top: 200px;
-  left: 950px;
-  width: 509;
+    position:absolute; /* positioned relative to #snoopy*/
+
+   top: 200px; /* imaged pushed from the top downward 200px*/
+  left: 950px;   /* imaged pushed from the left rightward 950px*/
+  width: 509; 
   height: 472px;
-  animation-name: dancee;
+  animation-name: dancee; /* used to define the animation that will be used later*/
  animation-duration: 4s;
    animation-iteration-count: infinite;
 }
     @keyframes dance {
  0%{
-  transform: rotate(60deg);
+  transform: rotate(60deg); /*rotate clockwise*/
  }
 
 50%{
-   transform: rotate(-60deg);
-  transform: translate(200px, 100px);
+   transform: rotate(-60deg); /*rotate counterclockwise*/
+  transform: translate(200px, 100px); 
 
  
 
@@ -84,7 +81,7 @@ text-shadow: 1px 3px;
 
 @keyframes dancee {
      0%{
-         transform: rotateX ;
+         transform: rotateX(360deg); /* rotate a full circle*/
      }
      100%{
          transform:  rotateX(-360deg);
